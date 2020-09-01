@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Домашна ракия</string>
+    <string name="btnSolution_activity_main">Разреждане на ракия</string>
+    <string name="btnCorrection_activity_main">определяне на градуса</string>
+    <string name="imageViewLogo_activity_main">Наздраве!</string>
+    <string name="lblInputDegree_activity_correction">показания на спиртомера(5.5 – 100)</string>
+    <string name="lblInputTemperature_activity_correction">показания на термометъра(0 – 30)</string>
+    <string name="lblTitle_activity_correction">Определяне на градуса</string>
+    <string name="lblDescription_activity_correction">За да определите градуса на ракията са ви нужни битов спиртомер и
+        термометър.
+        Поставете уредите в съда с течността и изчакайте до отчитане на стабилни стойности. Въведете отчетените
+        стойности в полетата по-долу и натиснете бутона [измери]
+    </string>
+    <string name="btnCorrectionOK_activity_correction">измери</string>
+    <string name="txtInputTemperature_activity_correction">20</string>
+    <string name="txtInputDegree_activity_correction">60</string>
+    <string name="lblResult_activity_correction">градус на ракията</string>
+    <string name="txtResult_activity_correction"/>
+    <string name="lblTitle_activity_solution">Разреждане на ракия</string>
+    <string name="lblDescription_activity_solution">За да понижите градуса на ракията трябва да добавите дестилирана вода (или по-слаба ракия разредител, което не се препоръчва но е възможно). Въведете стойностите в полетата и натиснете бутона [изчисли].</string>
+    <string name="lblSourceDegree_activity_solution">градус на силната ракия</string>
+    <string name="txtSourceDegree_activity_solution">60</string>
+    <string name="btnCorrectSourceDegree_activity_solution">измери</string>
+    <string name="lblSourceVolume_activity_solution">литри на силната ракия</string>
+    <string name="txtSourceVolume_activity_solution">10</string>
+    <string name="lblDiluentDegree_activity_solution">градус на разредителя(0 за вода)</string>
+    <string name="btnCorrectDiluentDegree_activity_solution">измери</string>
+    <string name="txtDiluentDegree_activity_solution">0</string>
+    <string name="lblTargetDegree_activity_solution">градус на желаната ракия</string>
+    <string name="txtTargetDegree_activity_solution">45</string>
+    <string name="btnSolutionOK_activity_solution">изчисли</string>
+    <string name="lblResult_activity_solution">литри вода(разредител), които да добавите</string>
+    <string name="txtResult_activity_solution" />
+    <!-- Error messages -->
+    <string name="error_correctionService_setTemperature_empty">Въведете температура на р-ра!</string>
+    <string name="error_correctionService_setTemperature_outOfRange">Температурата трябва да е &gt;= 0C° и &lt;= 30C°!</string>
+    <string name="error_correctionService_setDegree_empty">Въведете показания на спиртомера!</string>
+    <string name="error_correctionService_setDegree_outOfRange">"Показанието на спиртомера трябва да е &gt;= 5.5 и &lt;= 100!"</string>
+    <string name="error_solutionService_setSourceDegree_empty">Въведете градуса на силния р-р!</string>
+    <string name="error_solutionService_setSourceDegree_outOfRange">Градуса на силния р-р трябва да е &gt; 0 и &lt;= 100!</string>
+    <string name="error_solutionService_setSourceVolume_empty">Въведете обема на силния р-р в л.!</string>
+    <string name="error_solutionService_setSourceVolume_outOfRange">Обема на силния р-р трябва да е > 0л!</string>
+    <string name="error_solutionService_setDiluentDegree_empty">Въведете градуса на слабия р-р!</string>
+    <string name="error_solutionService_setDiluentDegree_outOfRange">Градуса на слабия р-р трябва да е &gt;= 0 и &lt; от градуса на силния р-р!</string>
+    <string name="error_solutionService_setTargetDegree_empty">Въведете градуса на желания р-р!</string>
+    <string name="error_solutionService_setTargetDegree_outOfRange">Градуса на желания р-р трябва да е &gt; от градуса на слабия р-р и &lt; от градуса на силния р-р!</string>
+    <!-- Strings used for fragments for navigation -->
+</resources>

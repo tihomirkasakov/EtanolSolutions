@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SolutionActivity">
+    <TextView
+            android:text="@string/lblTitle_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/lblTitle"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lblDescription"/>
+    <TextView
+            android:text="@string/lblDescription_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/lblDescription"
+            android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/lblTitle"
+            app:layout_constraintBottom_toTopOf="@+id/lblSourceDegree"/>
+    <!-- SourceDegree -->
+    <TextView
+            android:text="@string/lblSourceDegree_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/lblSourceDegree"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/lblDescription"
+            app:layout_constraintBottom_toTopOf="@+id/txtSourceDegree"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:ems="10"
+            android:id="@+id/txtSourceDegree"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnCorrectSourceDegree"
+
+            app:layout_constraintTop_toBottomOf="@+id/lblSourceDegree"
+            app:layout_constraintBottom_toTopOf="@+id/lblSourceVolume"
+            android:text="@string/txtSourceDegree_activity_solution" android:importantForAutofill="no"
+            android:hint="@string/lblSourceDegree_activity_solution"/>
+    <Button
+            android:text="@string/btnCorrectSourceDegree_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnCorrectSourceDegree"
+            app:layout_constraintStart_toEndOf="@+id/txtSourceDegree"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/lblSourceDegree"
+            app:layout_constraintBottom_toTopOf="@+id/lblSourceVolume"/>
+    <!-- SourceVolume -->
+    <TextView
+            android:text="@string/lblSourceVolume_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/lblSourceVolume"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtSourceDegree"
+            app:layout_constraintBottom_toTopOf="@+id/txtSourceVolume"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:ems="10"
+            android:id="@+id/txtSourceVolume"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/lblSourceVolume"
+            app:layout_constraintBottom_toTopOf="@+id/lblDiluentDegree"
+            android:text="@string/txtSourceVolume_activity_solution" android:importantForAutofill="no"
+            android:hint="@string/lblSourceVolume_activity_solution"/>
+    <!-- DiluentDegree -->
+    <TextView
+            android:text="@string/lblDiluentDegree_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/lblDiluentDegree"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtSourceVolume"
+            app:layout_constraintBottom_toTopOf="@+id/txtDiluentDegree"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:ems="10"
+            android:id="@+id/txtDiluentDegree"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnCorrectDiluentDegree"
+
+            app:layout_constraintTop_toBottomOf="@+id/lblDiluentDegree"
+            app:layout_constraintBottom_toTopOf="@+id/lblTargetDegree"
+            android:text="@string/txtDiluentDegree_activity_solution" android:importantForAutofill="no"
+            android:hint="@string/lblDiluentDegree_activity_solution"/>
+    <Button
+            android:text="@string/btnCorrectDiluentDegree_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnCorrectDiluentDegree"
+            app:layout_constraintStart_toEndOf="@+id/txtDiluentDegree"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/lblDiluentDegree"
+            app:layout_constraintBottom_toTopOf="@+id/lblTargetDegree"/>
+    <!--  -->
+    <!-- TargetDegree -->
+    <TextView
+            android:text="@string/lblTargetDegree_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/lblTargetDegree"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtDiluentDegree"
+            app:layout_constraintBottom_toTopOf="@+id/txtTargetDegree"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:ems="10"
+            android:id="@+id/txtTargetDegree"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/lblTargetDegree"
+            app:layout_constraintBottom_toTopOf="@+id/btnSolutionOK"
+            android:text="@string/txtTargetDegree_activity_solution" android:importantForAutofill="no"
+            android:hint="@string/lblTargetDegree_activity_solution"/>
+    <!-- btnSolutionOK -->
+    <Button
+            android:text="@string/btnSolutionOK_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnSolutionOK"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtTargetDegree"
+            app:layout_constraintBottom_toTopOf="@+id/lblResult"/>
+    <!-- Result -->
+    <TextView
+            android:text="@string/lblResult_activity_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/lblResult"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/btnSolutionOK"
+            app:layout_constraintBottom_toTopOf="@+id/txtResult" android:textColor="@color/colorPrimaryDark"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:ems="10"
+            android:id="@+id/txtResult"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSolutionOK"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/txtResult_activity_solution" android:importantForAutofill="no"
+            android:textColor="@color/colorPrimaryDark" tools:ignore="LabelFor"/>
+</android.support.constraint.ConstraintLayout>
